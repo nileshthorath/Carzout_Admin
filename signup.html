@@ -1,0 +1,144 @@
+<html>
+<head>
+	<title>Welcome to Carzout | Signup</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Stylesheet starts here -->
+	<link rel="stylesheet" href="css/stylesheet.css" media="all" />	
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<!--Main wrapper -->
+<div class="mainWrap">
+	<div class="mobileLogoPnl">
+		<a href="#"><img src="images/logo.svg" alt="Carzout" title="Carzout" /></a>
+	</div>	
+	<!-- Left Form section: starts here -->
+	<div class="leftTopStickyImg"></div>
+	<div class="leftPnl">
+		<img src="images/top-img.png" alt="" title="" class="topImg" />
+		<h1 class="pageTitle">Sign Up</h1>
+		<p>What do you want to do on Carzout? Buy or Sell? Get Started here.</p>
+		<div class="tabsPnl">
+<!--Form: starts here -->
+		<ul id="tabs">
+		      <li><a id="tab1">I'm buyer</a></li>
+		      <li><a id="tab2">I'm seller</a></li>
+		      <br class="clr" />	      
+		</ul>
+      	<div class="container" id="tab1C">
+      		<div class="socialAcLinkWrpr">
+	      		<a href="#" class="socialAcLink"><i class="fa fa-google"></i> Sign up with Google</a>
+	      		<a href="#" class="socialAcLink"><i class="fa fa-facebook-f"></i> Sign up with Facebook</a>	      		
+      		</div>
+      		<form id="formBuyer" action="" method="post">
+			<div class="inputWrpr mrgnRgt">
+				<label for="name">
+					<span>First name</span><br>
+					<input id="name" name="name" type="text" value="" required />
+				</label>
+			</div>
+			<div class="inputWrpr">
+				<label>
+					<span>Last name</span><br>
+					<input type="text" value="" required />
+				</label>
+			</div>
+			<br class="clr" />
+			<div class="inputWrpr inputEmail">
+				<label for="email">
+					<span>Email</span><br>
+					<input type="email" value="" required  name="email" id="email" />
+				</label>
+			</div>
+			<br class="clr" />
+			<div class="inputWrpr mrgnRgt">
+				<label>
+					<span>Password</span><br>
+					<input type="password" value="" maxlength="10" />
+				</label>
+			</div>
+			<div class="inputWrpr">
+				<label>
+					<span>Confirm Password</span><br>
+					<input type="password" value="" maxlength="10" />
+				</label>
+			</div>
+			<br class="clr" />
+			<p class="termsTxt">Creating an account with CarzOut means you are agree with out <a href="#">Terms and Condition</a>.</p>
+			<button>Create an account</button>
+		</form>
+		<div class="socialAcLinkWrpr socialAcLinkMobile">
+      		<a href="#" class="socialAcLink"><i class="fa fa-google"></i> Sign up with Google</a>
+      		<a href="#" class="socialAcLink"><i class="fa fa-facebook-f"></i> Sign up with Facebook</a>
+      		<a href="#">I already Have an Account</a>
+  		</div>
+<!--Form: ends here -->		
+      	</div>
+      	<div class="container" id="tab2C">
+      		<div class="socialAcLinkWrpr">
+	      		<a href="#" class="socialAcLink"><i class="fa fa-google"></i> Sign up with Facebook</a>
+	      		<a href="#" class="socialAcLink"><i class="fa fa-facebook-f"></i> Sign up with Facebook</a>
+      		</div>
+      		<form id="formSeller" action="" method="post">
+				<div class="inputWrpr mrgnRgt">
+					<label for="name">
+						<span>First name</span><br>
+						<input id="name" name="name" type="text" value="" required />
+					</label>
+				</div>
+				<div class="inputWrpr">
+					<label>
+						<span>Last name</span><br>
+						<input type="text" value="" required />
+					</label>
+				</div>
+				<br class="clr" />
+				<div class="inputWrpr inputEmail">
+					<label for="email">
+						<span>Email</span><br>
+						<input type="email" value="" required  name="email" id="email" />
+					</label>
+				</div>
+				<br class="clr" />
+				<div class="inputWrpr mrgnRgt">
+					<label>
+						<span>Password</span><br>
+						<input type="password" value="" />
+					</label>
+				</div>
+				<div class="inputWrpr">
+					<label>
+						<span>Confirm Password</span><br>
+						<input type="password" value="" />
+					</label>
+				</div>
+				<br class="clr" />
+				<p class="termsTxt">Creating an account with CarzOut means you are agree with out <a href="#">Terms and Condition</a>.</p>
+				<button>Create an account</button>
+		</form>
+		<div class="socialAcLinkWrpr socialAcLinkMobile">
+      		<a href="#" class="socialAcLink"><i class="fa fa-google"></i> Sign up with Google</a>
+      		<a href="#" class="socialAcLink"><i class="fa fa-facebook-f"></i> Sign up with Facebook</a>
+      		<a href="#">I already Have an Account</a>
+  		</div> 
+<!--Form: ends here -->
+      	</div>
+      	</div>
+      	<img src="images/bottom-img.png" alt="" title="" class="bottomImg" />
+      	<img src="images/bottom-cloud.png" alt="" title="" class="bottomRgtStickyImg" />
+	</div>
+	<!-- Left Form section: ends here -->
+	<div class="rgtPnl"><img src="images/rightimg.png" alt="" title="" /></div>
+	<br class="clr" />
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+<script src="js/custom.js"></script>
+<script>
+$(document).ready(function() {
+	$("#formBuyer").validate();
+	$("#formSeller").validate();
+});
+</script>
+</body>
+</html>
